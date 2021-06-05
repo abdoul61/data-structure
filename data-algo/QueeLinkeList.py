@@ -15,7 +15,6 @@ class _Node:
 
 # Here we create the quee class with all the different method for different operations
 
-
     class QueeLinkedList:
         def __init__(self):
             self._front = None
@@ -55,3 +54,11 @@ class _Node:
             if self.isEmpty():
                 self._rear = None
             return e
+
+# This method return the first element of the queelinkedist
+
+        def first(self):
+            if self.isEmpty():
+                print('The list is empty')
+                return -1
+            return self._front._element
