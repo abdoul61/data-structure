@@ -5,7 +5,7 @@
 class QueeArray:
 
     def __init__(self):
-        self._data = []
+        self._Data = []
 
 # This method return len of the array
     def __len__(self):
@@ -36,3 +36,15 @@ class QueeArray:
             print('The quee is empty')
             return -1
         return self._Data[0]
+
+
+Q = QueeArray()
+print(Q.isEmpty())
+Q.enquee(23)
+Q.enquee(12)
+Q.enquee(25)
+Q.enquee(89)
+Q.enquee(56)
+print(Q._Data)
+Q.dequee()
+print(Q._Data)
