@@ -67,7 +67,7 @@ class QueeLinkedList:
     def display(self):
         p = self._front
         while p:
-            print(p._element, end='-->')
+            print(p._element, end='<--')
             p = p._next
         print()
 
